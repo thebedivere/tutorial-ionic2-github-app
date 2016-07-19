@@ -14,7 +14,7 @@
       <ion-avatar item-left>
         <img [src]="user.avatar_url">
       </ion-avatar>
-      <h2>{{ user.login }}</h2>
+      <h2>{{ user.login | capitalize }}</h2>
       <ion-icon ios="ios-arrow-forward" md="md-arrow-forward" item-right></ion-icon>
     </button>
   </ion-list>

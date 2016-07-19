@@ -8,6 +8,7 @@ import { User } from '../../models/user';
 // import user's detail page
 import { UserDetailsPage } from '../user-details/user-details';
 
+import { Capitalize } from '../../pipes/capitalize';
 
 /*
   Generated class for the UsersPage page.
@@ -17,7 +18,8 @@ import { UserDetailsPage } from '../user-details/user-details';
 */
 @Component({
   templateUrl: 'build/pages/users/users.html',
-  providers: [GithubUsers]
+  providers: [GithubUsers],
+  pipes: [ Capitalize ]
 })
 export class UsersPage {
   users: User[];
